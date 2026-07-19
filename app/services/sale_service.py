@@ -6,7 +6,6 @@ from app.repositories.user_repository import UserRepository
 
 
 class SaleService:
-
     def __init__(self):
         self.sale_repository = SaleRepository()
         self.user_repository = UserRepository()
@@ -102,8 +101,6 @@ class SaleService:
 
         if not updated:
             raise ValueError("Unable to update sale.")
-        
-
         
 
         return True
